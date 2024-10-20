@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -71,7 +71,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #8291c4;
 }
 
 canvas {
