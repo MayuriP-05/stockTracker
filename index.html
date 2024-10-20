@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Tracker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Stock Tracker Dashboard</h1>
+        
+        <div class="search-bar">
+            <input type="text" id="stock-search" placeholder="Enter stock symbol (e.g., AAPL)">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div class="dropdown">
+            <select id="trending-stocks">
+                <option value="">Select Trending Stock</option>
+            </select>
+        </div>
+
+        <div class="stock-info">
+            <h2>Stock Information</h2>
+            <h1 id="stock-name"></h1>
+            <p><strong>Price:</strong> <span id="stock-price">N/A</span></p>
+            <p><strong>Volume:</strong> <span id="stock-volume">N/A</span></p>
+            <p><strong>Change:</strong> <span id="stock-change">N/A</span></p>
+        </div>
+
+        <canvas id="stock-chart" width="400" height="200"></canvas>
+
+        <h2>Comparison Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Volume</th>
+                </tr>
+            </thead>
+            <tbody id="comparison-body">
+                <!-- Comparison data will be added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
